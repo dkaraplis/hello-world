@@ -1,12 +1,26 @@
+# internal and external types
+
 import sys
 
 _message = sys.argv[0]
 
+# _ = internal to program.  protected. python best practice
+
+#strings
 _str = "this is a str"
 _str_2 = 'this is a str'
+#in python, ' and " are treated the same
+_str = f'{_str_2} test'
+#interpolation string
+#if python 2, must use .format(_str_2=str_2)
 
-_bool = True  # False
+#boolean
+_bool = True
+_bool_false = False
+
+#int = whole number. can be negative
 _int = 1
+_int_negative = -1
 _float = 1.0
 
 # message = 'hello world'
@@ -58,3 +72,4 @@ if search_value in message:
     print(True)
 else:
     print(False)
+
