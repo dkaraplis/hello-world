@@ -18,10 +18,38 @@ _str = f'{_str_2} test'
 _bool = True
 _bool_false = False
 
-#int = whole number. can be negative
+#integers = whole number. can be negative
 _int = 1
 _int_negative = -1
+
+#Floats = decimals
 _float = 1.0
+_float_negative = -1.0
+
+#casting
+output = int('1') + 1
+output2 = '1' + str(1)
+
+print(output)
+print(output2)
+
+print(bool(0))
+print(bool(1))
+print(bool(.1))
+print('---')
+
+print(len(''))
+print(len('false'))
+
+#list
+_list = ['alex', 'grande', 'sara',
+         'danie', 'laura', 'jen']
+_list2 = list()
+
+for name in _list:
+    print(name)
+
+
 
 # message = 'hello world'
 #
@@ -73,3 +101,10 @@ if search_value in message:
 else:
     print(False)
 
+"""
+practice: print each letter in a given string
+"""
+
+name = 'name'
+for character in name:
+    print(character)
