@@ -108,3 +108,30 @@ practice: print each letter in a given string
 name = 'name'
 for character in name:
     print(character)
+
+"""
+practice: create a function that takes an input, 
+then prints each character of the input
+"""
+
+def print_character(input):
+    for character in input:
+        print(character)
+print_character('wonder woman')
+
+#search is a variable
+#== compares
+#= assigns
+def search_character(search, find):
+    is_found = False
+    for character in find:
+        if character == search:
+            is_found = True
+
+            print(True)
+search_character('a', 'purple')
+
+
+
+
+
