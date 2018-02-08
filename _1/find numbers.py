@@ -107,14 +107,14 @@ else:
 practice: elif statements
 """
 
-# message = 'hello world'
-#
-# if message = 'hello world'
-#     print('1')
-# elif == 'danielle'
-#     print('2')
-# else
-#     print('3')
+message = 'hello_world'
+
+if message == 'hola':
+    print('1')
+elif message == 'danielle':
+    print('2')
+else:
+    print('3')
 
 """
 practice: print each letter in a given string
