@@ -1,4 +1,4 @@
-# internal and external types
+# internal and external types of data
 
 import sys
 
@@ -17,6 +17,7 @@ _str = f'{_str_2} test'
 #boolean
 _bool = True
 _bool_false = False
+#anything 0 = true, anything not 0 = false
 
 #integers = whole number. can be negative
 _int = 1
@@ -93,6 +94,7 @@ for letter in message:
 practice: print true or false if a letter exists in a given string
 """
 
+#logical
 search_value = 'a'
 message = 'hello world'
 
@@ -100,6 +102,19 @@ if search_value in message:
     print(True)
 else:
     print(False)
+
+"""
+practice: elif statements
+"""
+
+# message = 'hello world'
+#
+# if message = 'hello world'
+#     print('1')
+# elif == 'danielle'
+#     print('2')
+# else
+#     print('3')
 
 """
 practice: print each letter in a given string
@@ -131,7 +146,39 @@ def search_character(search, find):
             print(True)
 search_character('a', 'purple')
 
+#comparisons
+# == equals
+# != not equal
+# > greater than
+# < less than
+# >= greater than or equal to
+# <= less than or equal to
+# = is the assignment of
 
+"""
+practice: create a function that tkes an input, 
+then prints each character of the input
+"""
 
+def print_characters(input_string: str):
+    #print('\n'.join(input_string))
+    for character in input_string:
+        print(character)
 
+"""
+Practice: create a function that takes two inputs,
+then prints True/False whether or not the first input
+is contained within the second input
+"""
 
+text_value = 'some input'
+def search_string(search, text_input):
+    result=False
+    for character in text_input:
+        if character == search:
+            result=True
+    print(result)
+
+search_string('a', text_value) #False
+search_string('s', text_value) #True
+search_string('S', text_value) #False
